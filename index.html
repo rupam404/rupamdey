@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<style>
+    body{
+        border: 2px solid rgb(0, 0, 87);
+    }
+    h1{
+        color: darkblue;
+        text-align: center;
+        background-color: aqua;
+        padding: 20px;
+        font-style: italic;
+    }
+    p{
+        text-align: center;
+        color: paleturquoise;
+        background-color: black;
+        padding: 20px;
+        font-size: 20px;
+    }
+   
+    #fullname{
+        padding: 5px;
+    }
+    #email{
+        padding:5px;
+    }
+    #dob{
+        padding:5px;
+    }
+    #password{
+        padding:5px;
+    }
+    #relegion{
+        padding:5px;
+    }
+    #Gender{
+        font-size: 18px;
+    }
+    div.name{
+        text-align: center;
+        font-size: 18px;
+        padding:5px;
+    }
+    div.email{
+        text-align: center;
+        font-size: 18px;
+    }
+    div.dob{
+        text-align: center;
+        font-size: 18px;
+    }
+    div.password{
+        text-align: center;
+        font-size: 18px;
+    }
+    div.gender{
+        text-align: center;       
+    }
+    div.relegion{
+        text-align: center;       
+    }
+    .button2 {       
+     background-color:aqua; 
+     color: black; 
+     border: none;
+     padding:10px;
+     border-radius: 4px;
+     width: 100px;
+     font-size: 14px;    
+    }
+
+     .button2:hover {
+       background-color:white;
+       color: rgb(4, 23, 110);
+       border:2px solid aqua;
+    }
+    div.Submit{
+        text-align: center;
+    }
+
+    footer{
+        text-align: center;
+        background-color: cyan;
+        padding :22px;
+        font-style:italic;
+        font-size: 18px;
+    }
+   
+   
+</style>
+<body>
+    <form>
+        <h1>User Registration Form</h1>
+        <p>Please fill your information in this form</p>
+
+        <div class="name">
+            <label for="name">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Please enter your full name"  size="40" maxlength="20"
+                    required >
+        </div><br>
+
+        <div class="email">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="Please enter your email address" size="40" 
+                    required >
+        </div><br>
+
+        <div class="dob">
+            <label for="dob">DOB:</label>
+            <input type="date" id="dob" name="dob"  size="40" 
+                    required >
+        </div><br>
+          
+        <div class="password">
+            <label for="email">Password:</label>
+            <input type="text" id="password" name="password" placeholder="Please enter your password" size="40" 
+                    required >
+        </div><br>
+
+        <div class="gender">
+            <label for="gender" id="Gender">Gender :</label>
+            <label for="name">Male</label>
+            <input type="radio" name="gender" >
+            <label for="name">Female</label>
+            <input type="radio" name="gender" >        
+        </div><br>
+
+        <div class="relegion">
+            <label for="relegion">Religion :</label>
+            <select id="relegion">
+                <option value="Hindu">Hindu</option>
+                <option value="Muslim">Muslim</option>
+                <option value="Christian">Christian</option>
+
+            </select><br><br>
+        </div>
+
+        <div class="Submit">
+            <button class="button button2">Submit</button>
+        </div><br>
+
+
+
+
+
+
+        <footer >Already have an account? <a herf="#"><b>Log In</b></a></footer>
+    </form>
+
+
+</body>
+</html>
